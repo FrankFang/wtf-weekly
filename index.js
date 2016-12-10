@@ -5,7 +5,7 @@ var seperator = '|' + uuid.v1() + '|'
 var _ = require('lodash')
 
 var commits = []
-function run(){
+function run(done){
   var commitsStream = gitRawCommits({format:['%an','%ae','%at','%s','%b'].join(seperator)})
   var filter = through(function(buffer,enc,cb) {
     var content = buffer.toString()
@@ -31,9 +31,11 @@ function run(){
     })
     .on('unpipe', function(){
       console.log(onGetCommits(commits))
+      done()
     })
     .on('finish', function(){
       console.log(onGetCommits(commits))
+      done()
     })
 
 }
