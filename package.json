@@ -1,0 +1,23 @@
+{
+  "name": "wtf-weekly",
+  "version": "0.1.0",
+  "description": "Generate your weekly report.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrankFang/wtf-weekly.git"
+  },
+  "keywords": [
+    "git",
+    "weekly"
+  ],
+  "author": "frankfang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrankFang/wtf-weekly/issues"
+  },
+  "homepage": "https://github.com/FrankFang/wtf-weekly#readme"
+}
