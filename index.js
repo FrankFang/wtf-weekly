@@ -1,7 +1,6 @@
 var through = require('through2')
 var gitRawCommits = require('git-raw-commits')
-var uuid = require('node-uuid')
-var seperator = '|' + uuid.v1() + '|'
+var seperator = '|38a7e124-3619-4a92-97d7-d6cde61f3129|'
 var _ = require('lodash')
 
 var commits = []
