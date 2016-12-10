@@ -1,8 +1,13 @@
 {
   "name": "wtf-weekly",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Generate your weekly report.",
   "main": "index.js",
+  "bin":{
+    "wtf-weekly":"bin/cli.js",
+    "weekly":"bin/cli.js",
+    "ww":"bin/cli.js"
+  },
   "scripts": {
     "test": "./node_modules/.bin/watch 'node test.js' ./ --interval=0.4"
   },
